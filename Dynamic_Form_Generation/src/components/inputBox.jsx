@@ -1,14 +1,24 @@
 import React from "react";
 import MultipleChoice from "./MultipleChoice";
-
+import ShortAnswer from "./ShortAnswer";
+import Paragraph from "./Paragraph";
+import Checkbox from "./Checkbox";
+import Dropdown from "./Dropdown";
 const InputBox = () => {
   const [type, setType] = React.useState("m");
+  function ChangeBox() {
+    if (type === "m") return <MultipleChoice />;
+    if (type === "s") return <ShortAnswer />;
+    if (type === "p") return <Paragraph />;
+    if (type === "c") return <Checkbox />;
+    if (type === "d") return <Dropdown />;
+  }
   return (
     <div className="input-box main">
-      <MultipleChoice />
+      <ChangeBox />
       <select
         onChange={(e) => {
-          alert(e.target.value);
+          setType(e.target.value);
         }}
         id="input-type"
       >

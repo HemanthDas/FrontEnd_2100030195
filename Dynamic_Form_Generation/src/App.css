@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80vw;
+  width: 70vw;
 }
 .main {
   background-color: white;
@@ -26,9 +26,9 @@
 }
 
 .floating-nav {
-  position: absolute;
-  top: 0;
-  right: -7vmin;
+  position: fixed;
+  top: 10px;
+  right: 10vmin;
   background-color: white;
   z-index: 100;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -42,12 +42,12 @@
 }
 .multiple {
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   height: fit-content;
   transition: all 0.5s;
   > input {
     margin: 0.5rem;
-    width: 80%;
+    width: 100%;
     outline: none;
     border: none;
     border-bottom: 1px solid #020202;
@@ -65,4 +65,9 @@
 }
 #input-type {
   position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
