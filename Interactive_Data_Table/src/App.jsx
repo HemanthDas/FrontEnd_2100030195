@@ -16,7 +16,7 @@ function App() {
     { id: 11, name: "Christopher Lewis", age: 33, city: "Jacksonville" },
     { id: 12, name: "Sarah Johnson", age: 29, city: "Indianapolis" },
     { id: 13, name: "William Jones", age: 45, city: "Columbus" },
-    { id: 14, name: "Jennifer Garcia", age: 27, age: "Charlotte" },
+    { id: 14, name: "Jennifer Garcia", age: 27, city: "Charlotte" },
     { id: 15, name: "Daniel Hernandez", age: 39, city: "Detroit" },
     { id: 16, name: "Margaret Miller", age: 52, city: "El Paso" },
     { id: 17, name: "Joseph Moore", age: 41, city: "Seattle" },
