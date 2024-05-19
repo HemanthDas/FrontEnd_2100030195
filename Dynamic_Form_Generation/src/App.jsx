@@ -17,6 +17,7 @@ function App() {
           Add
         </button>
       </div>
+      <h1>Form Builder</h1>
       {fields.map((field, index) => {
         return <InputBox key={index + 1} />;
       })}
